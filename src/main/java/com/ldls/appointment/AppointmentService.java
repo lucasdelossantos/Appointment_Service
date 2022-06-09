@@ -1,3 +1,7 @@
+/*
+ * Copyright (c) 2022 Lucas de los Santos
+ */
+
 package com.ldls.appointment;
 
 import org.apache.commons.lang.RandomStringUtils;
