@@ -43,7 +43,7 @@ public class Appointment {
             throw new IllegalArgumentException("Appointment Date cannot be null");
         }
         else if (date.isBefore(today)) {
-            throw new IllegalArgumentException("Appointment Date cannot make appointment in the past.");
+            throw new IllegalArgumentException("Appointment Date cannot be in the past");
         }
         else {
             this.appointmentDate = date;
@@ -68,5 +68,10 @@ public class Appointment {
 
     public void setAppointmentDate(LocalDate date) {
         LocalDate today = LocalDate.now();
+    }
+
+    @Override
+    public String toString() {
+        return "["+appointmentId+","+description+","+appointmentDate+"]";
     }
 }
